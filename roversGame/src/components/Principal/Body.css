@@ -2,11 +2,8 @@
   position: absolute;
   top: 10vh;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .background {
@@ -19,12 +16,26 @@
 }
 
 .bodyContent {
-  text-align: center;
-  z-index: 1;
+  position: absolute;
+  top: 2vh;
+  left: 0;
+  width: 90vw;
   color: white;
+  display: inline-flex;
+  align-items: center;
 }
 
-h1 {
+.TitleA {
   font-size: 2em;
-  margin-bottom: 0.5em;
+}
+
+.form-range {
+  pointer-events: auto;
+  width: 10vw;
+}
+
+.Board {
+  position: absolute;
+  top: 15vh;
+  left: 5vw;
 }
