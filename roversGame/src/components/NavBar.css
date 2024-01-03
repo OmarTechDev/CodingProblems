@@ -1,0 +1,87 @@
+.top{
+    background: #32353c;
+    padding: 10px;
+    position: fixed;
+    height: 10vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+    z-index: 999;
+}
+
+.App-logo {
+    height: 6vmin;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.navbar-brand {
+    font-size: calc(2.7vmax);
+    color: #00c8ff;
+    width: 32vw;
+    margin-left: -2vw;
+}
+
+.navbar-brand:hover {
+    color: #00c8ff;
+}
+
+.navbar-nav{
+    margin-top: 1%;
+    padding: 15vw;
+    display: flex;
+    flex-direction:row;
+    width: 60vw;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item{
+    font-size: calc(2vmax);
+    color: #00c8ff;
+    list-style: none;
+    padding: 10px;
+}
+
+.navbar .dropdown {
+    position: relative;
+}
+
+.navbar .dropdown :hover{
+    color: #00c8ff;
+}
+
+.navbar .dropdown ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+.navbar .dropdown:hover ul {
+    display: block;
+    background-color: #00ffff !important;
+    padding: 10px;
+    z-index: 9000 !important;
+}

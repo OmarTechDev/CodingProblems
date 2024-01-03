@@ -28,12 +28,12 @@ const ElementsBar = () => (
 function Maintop() {
   return (
     <>
-      <nav className="prueba">
+      <nav className="top">
         <div className="header-logowrap">
           <Logo className="App-logo"/>
         </div>
         <div className="navbar-brand">
-          Omar Oporto Bernal
+          Rovers - Game
         </div>
         <ElementsBar/>
       </nav>
