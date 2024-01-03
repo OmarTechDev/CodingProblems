@@ -1,0 +1,30 @@
+.MainCotainer {
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../../assets/skyBackground.svg) center/cover no-repeat; /* Ajusta la ruta al archivo SVG */
+}
+
+.bodyContent {
+  text-align: center;
+  z-index: 1;
+  color: white;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
