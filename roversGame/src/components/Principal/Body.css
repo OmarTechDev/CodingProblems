@@ -36,8 +36,8 @@
 
 .Board {
   position: absolute;
-  top: 15vh;
-  left: 5vw;
+  top: 120px;
+  left: 78px;
 }
 
 .xVertical {
@@ -76,8 +76,8 @@
   position: absolute;
   top: 85vh;
   left: 2vw;
-  max-width: 800px;
-  height: 280px;
+  max-width: 870px;
+  height: 320px;
   padding: 0;
   margin: 0;
   border-radius: 5px;
