@@ -4,7 +4,7 @@ import { ComandLineProps } from "./Interfaces"
 import rover from '../../assets/roversFunctional.jpg'
 
 function verifyFormatInitial(inputString:string): boolean {
-  const regex = /^\d+\s\d+\s[NSWE]$/
+  const regex = /^\d+\s\d+\s[NSWE]$/;
 
   if (regex.test(inputString)) {
     return true
@@ -28,8 +28,8 @@ export const ComandLine: React.FC<ComandLineProps> = ({ width, height, addRover,
   const handleSubmit = () => {
     if(verifyFormatInitial(initialPosition) &&
       commandFormat(commandLineInput) &&
-      (parseInt(initialPosition[0]) <= width) &&
-      (parseInt(initialPosition[2]) <= height))
+      (parseInt(initialPosition.split('')[0]) <= width) &&
+      (parseInt(initialPosition.split('')[1]) <= height))
       {
 
         addRover(initialPosition)
