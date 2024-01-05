@@ -24,12 +24,22 @@ export const ComandLine: React.FC<ComandLineProps> = ({ width, height, addRover,
   const [initialPosition, setInitialPosition] = useState('');
   const [commandLineInput, setCommandLineInput] = useState('');
   //const [pivot, setPivot] = useState(false)
+  const positions = initialPosition.split(' ')
+  let realWidth = 1000
+  let realHeight = 1000
+  if(width === 1) {
+    realWidth = 0
+  } else { realWidth= width}
+  if(height === 1) {
+    realHeight = 0
+  } else {realHeight = height}
 
   const handleSubmit = () => {
+
     if(verifyFormatInitial(initialPosition) &&
       commandFormat(commandLineInput) &&
-      (parseInt(initialPosition.split('')[0]) <= width) &&
-      (parseInt(initialPosition.split('')[1]) <= height))
+      (parseInt(positions[0]) <= realWidth) &&
+      (parseInt(positions[1]) <= realHeight))
       {
 
         addRover(initialPosition)

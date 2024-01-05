@@ -1,7 +1,6 @@
 const Next = (D:string,move:string) => {
   const cardinal = ['N','E','S','W']
   const index = cardinal.indexOf(D)
-  console.log('index', index, D)
   if (move === 'R') {
     if(index === 3) {
       return cardinal[0]
@@ -22,7 +21,6 @@ export const Logic = (initial:string, movement:string, size:string) => {
   let x = 0
   let y = 0
   let d = 'xa'
-  console.log(size,"||" ,movement, "||",initial)
 
   if(size !==" " && initial!==""){
     const boardSize = size.split(" ")
@@ -35,13 +33,13 @@ export const Logic = (initial:string, movement:string, size:string) => {
     d = initialPosition[2]
   }
 
-  for(let i = 0; i < movement.length; i++) {
-    const letter = movement[i]
-    console.log(letter)
+  const movementCorrected = movement.replace(/\s/g, "")
+
+  for(let i = 0; i < movementCorrected.length; i++) {
+    const letter = movementCorrected[i]
     if (letter ==='L' || letter === 'R' ) {
       d = Next(d,letter)
     } else {
-      console.log('Here', x,"||",y,"||",d)
       if (d === 'N' && y < height) { y++ }
       if (d === 'S' && y > 0) { y-- }
       if (d === 'E' && x < width) { x++ }

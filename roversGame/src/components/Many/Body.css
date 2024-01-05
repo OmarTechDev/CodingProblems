@@ -1,0 +1,11 @@
+.ContainerResults {
+  position: absolute;
+	top: 10vh;
+	left: 0;
+	border-color: black;
+	align-items: center;
+	background-color: aqua;
+	height: 70vh;
+	width: 30vw;
+
+}
