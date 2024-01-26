@@ -47,3 +47,4 @@ export interface TitleBoardProps {
   rangeValueY: number;
   onRangeChange: (e: ChangeEvent<HTMLInputElement>, identifier: 'X' | 'Y') => void;
 }
+//Delete this
